@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bear {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: #000;
+            margin: auto;
+            transform: translateY(50%);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .bear::before {
+            content: "";
+            width: 80px;
+            height: 80px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-140px,110px);
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .bear::after {
+            content: "";
+            width: 80px;
+            height: 80px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(140px,110px);
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .eye {
+            width: 130px;
+            height: 95px;
+            border-radius:50%;
+            position: absolute;
+            background: white;
+            transform: translate(85px, 110px);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .eye::before {
+            content: "";
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 25%;
+            margin: auto;
+            transform: translate(-60px, -65px);
+            z-index: 1;
+        }
+
+        .eye::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 25%;
+            margin: auto;
+            transform: translate(60px, -75px);
+            z-index: 1;
+        }
+
+        .eye2 {
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .eye2::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 25%;
+            margin: auto;
+            transform: translate(-60px, -75px);
+            z-index: 1;
+
+        }
+
+        .eye2::after {
+            content: "";
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 25%;
+            margin: auto;
+            transform: translate(60px, -65px);
+            z-index: 1;
+        }
+
+        .nose {
+            width: 75px;
+            height: 35px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(30px, 40px);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .nose::before{
+            content: "";
+            width: 35px;
+            height: 25px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 25%;
+            margin: auto;
+            transform: translate(0px,-45px);
+        }
+
+        .nose::after{
+            content: "";
+            width: 45px;
+            height: 35px;
+            background: white;
+            position: absolute;
+            right: 0;
+            left: -50px;
+            top: 80px;
+            margin: auto;
+            transform: skew(55deg);
+            z-index: 1;
+        }
+
+        .ear {
+            width: 60px;
+            height: 60px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: -160px;
+            right: 0;
+            bottom: 0;
+            left: -100px;
+        }
+
+        .ear::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 10px;
+            margin: auto;
+        }
+
+        .ear::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 210px;
+            top: 10px;
+            margin: auto;
+        }
+
+        .ears {
+            width: 60px;
+            height: 60px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 200px;
+        }
+
+        .ears::before {
+            content: "";
+            width: 45px;
+            height: 35px;
+            background: white;
+            position: absolute;
+            right: 0;
+            left: -130px;
+            top: 240px;
+            margin: auto;
+            transform: skew(-55deg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="bear">
+        <div class="eye">
+            <div class="eye2">
+                <div class="nose">
+                    <div class="ear">
+                        <div class="ears"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
